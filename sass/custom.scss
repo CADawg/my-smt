@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+/* Purple for this theme (Main Theme Color) */
+$primary: #A349A4;
+
+/* Other Custom Colours */
+$danger: #ED1C24;
+$success: #22B14C;
+$info: #7092BE;
+
+
+/* Use Bulma to build - Get the latest version from https://bulma.io */
+@import "bulma.sass";

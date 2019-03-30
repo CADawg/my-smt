@@ -1,0 +1,240 @@
+/*!SMTMe v1.0.0 Stylesheet | AGPL Licence | https://github.com/Snaddyvitch-Dispenser/my-smt | @cadawg*/
+
+/*
+Ordering:
+Sections
+Alphabetically By Rule (Important rules should go in end sections)
+Alphabetically property name A-Z
+*/
+
+
+
+/* Bulma Extensions */
+
+.columns.width-reset {
+    width: 100%;
+}
+
+
+
+/* Clearfix */
+
+.clearfix {
+  overflow: auto;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+/* General Styles  */
+
+
+/* General Button */
+.action-button {
+    border-radius: 50601px;
+    width: 100%;
+    padding: 10px;
+    line-height: 100%;
+}
+
+
+/* Bubbles (Circles on page) */
+.bubbles {
+    align-self: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+    .bubbles .bubble {
+        background-color: white;
+        border-radius: 50601px;
+        display: inline-block;
+        height: 50px;
+
+        margin-right: 20px;
+        margin-bottom: 30px;
+
+        width: 50px;
+    }
+
+
+/* SMT Whitepaper boxes */
+.ecosystem-rundown {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+}
+
+    .ecosystem-rundown div.column {
+        justify-content: center;
+        max-width: 300px;
+        text-align: center;
+    }
+
+
+/* Fixes a few issues */
+.full-width {
+    width: 100%;
+}
+
+
+/* Grey out icon */
+.greyed-out {
+    -webkit-filter: grayscale(100%);
+       -moz-filter: grayscale(100%);
+         -o-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+            filter: grayscale(100%); 
+}
+
+
+/* Rounded cards near last page */
+.has-rounded-card .card {
+    border-radius: 20px;
+}
+
+
+    .has-rounded-card .card-content {
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+
+    .has-rounded-card .card-image,
+    .has-rounded-card .card-image .image img {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+
+.history-text {
+    padding: 0 20%;
+}
+
+
+/* App info boxes */
+.smt-brand {
+    border-radius: 50601px;
+        -moz-border-radius: 50601px;
+        -webkit-border-radius: 50601px;
+    margin: 0;
+    padding: 0;
+}
+
+    .smt-brand-image  {
+        background-size: cover;
+        border-top-right-radius: 50601px;
+        border-bottom-right-radius: 50601px;
+        display: block;
+        flex-basis: 0;
+        flex-grow: 1;
+        flex-shrink: 1;
+        width: 100%;
+    }
+
+    .smt-brand-text {
+        padding: 20px;
+    }
+
+
+/* Embedded Video */
+.smt-embed {
+    height: 40%;
+    width: 100%;
+}
+
+    .smt-small-embed {
+        display: block;
+        height: 250px;
+        width: 70%;
+    }
+
+    .smt-small-embed-parent {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+
+/* Images */
+.small-image-parent {
+    display: flex;
+    justify-content: center;
+}
+
+    .small-image {
+        align-self: center;
+        height: auto;
+        width: 500px;
+    }
+
+/* User profile Icons */
+.user-example-image {
+    background-size: cover;
+    border-radius: 50601px;
+    display: inline-block;
+    float: left;
+    height: 100px;
+    margin-right: 20px;
+    width: 100px;
+}
+
+
+
+/* Responsive */
+@media screen and (max-width: 720px) {
+    
+    .ecosystem-rundown {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .limited-text {
+        padding: 0 4%;
+    }
+    
+    /* Remove section padding on mobile */
+    .smt-embed-parent {
+        padding: 0 !important;
+    }
+    
+        .smt-embed {
+            height: 35%;
+        }
+
+        .smt-small-embed-parent {
+            padding: 10px 5px;
+        }
+
+            .smt-small-embed {
+                padding: 0;
+                width: 100%;
+            }
+}
+
+@media screen and (max-width: 1000px) {
+    .limited-text {
+        padding: 0 10%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .limited-text {
+        padding: 0 25%;
+    }
+}
+
+/*Customisable*/
+
+.card-content.is-primary {
+    background-color: #A349A4; /* Should match is-primary from bulma */
+    color: #ffffff; /* Contrasting color to is-primary */
+}
